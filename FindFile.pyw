@@ -42,7 +42,7 @@ def findfile(name, extensions, path):
 
 
 # Main Program
-files = findfile("answer", [".txt", ".pdf"], "/Users")
+files = findfile("answer", [".txt"], "/Users")
 
 print("Files found!\n")
 print("\n".join(files))
