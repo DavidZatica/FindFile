@@ -16,7 +16,7 @@ Looks through whole device in order to find a specific file. Once done it procee
 - If you want to search for any extension, leave it as a blank list
 - In the third parameter, enter the directory from which you want to start searching from
 - For mac, the root directory is simply '/', but I recommend to put '/Users' to search only in the personal files of the user, as the rest is mostly system files
-- For windows, the root directory is '\', however be careful when you do this and also leave the extensions blank(for the second parameter), as windows generally has '.lnk' type files, which are against Google TnC's, meaning that there will be an error when the email is sent. To avoid this just be specific about the file type that you want to look for
+- For windows, the root directory is '\', however be careful when you do this and also leave the extensions blank(for the second parameter), as windows generally has '.lnk' type files, which are against Google T&C's, meaning that there will be an error when the email is sent. To avoid this just be specific about the file type that you want to look for
 
 <br>
 
