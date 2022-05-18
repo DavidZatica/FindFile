@@ -4,8 +4,8 @@ Looks through whole device in order to find a specific file. Once done it procee
 <br>
 
 **How to get/recieve emails using FindFile.py:**
-- In FindFile.py, look for the three variables, fromaddr, frompassword, and toaddr
-- Put the email you want to send the files from at 'fromaddr' (make sure that you have the 'less secure app access' setting turned on)
+- In FindFile.py, look for the three variables, <code>fromaddr</code>, <code>frompassword</code>, and <code>toaddr</code>
+- Put the email you want to send the files from at <code>fromaddr</code> (make sure that you have the 'less secure app access' setting turned on)
 - Put the password for the email at 'frompassword'
 - Put the email you want to recieve the files at in 'toaddr'
 
