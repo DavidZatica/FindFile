@@ -6,13 +6,13 @@ Looks through whole device in order to find a specific file. Once done it procee
 **How to get/recieve emails using FindFile.py:**
 - In FindFile.py, look for the three variables, <code>fromaddr</code>, <code>frompassword</code>, and <code>toaddr</code>
 - Put the email you want to send the files from at <code>fromaddr</code> (make sure that you have the 'less secure app access' setting turned on)
-- Put the password for the email at 'frompassword'
-- Put the email you want to recieve the files at in 'toaddr'
+- Put the password for the email at <code>frompassword</code>
+- Put the email you want to recieve the files at in <code>toaddr</code>
 
 **How to search for a specific file using FindFile.py:**
-- In line 38, there should be a variable called files, to which it is assigned the result of the function 'findfile()'
+- In line 38, there should be a variable called <code>files</code>, to which it is assigned the result of the function <code>findfile()</code>
 - In the first parameter of the function, enter the term you want to search for
-- In the second parameter, enter the extensions you want to search for as '.*insert extension*'
+- In the second parameter, enter the extensions you want to search for as <code>eg: [".pdf", ".txt", ".pptx"]</code>
 - If you want to search for any extension, leave it as a blank list
 - In the third parameter, enter the directory from which you want to start searching from
 - For mac, the root directory is simply '/', but I recommend to put '/Users' to search only in the personal files of the user, as the rest is mostly system files
