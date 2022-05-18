@@ -19,5 +19,5 @@ Looks through whole device in order to find a specific file. Once done it procee
 - For windows, the root directory is '\', however be careful when you do this and also leave the extensions blank(for the second parameter), as windows generally has '.lnk' type files, which are against Google TnC's, meaning that there will be an error when the email is sent. To avoid this just be specific about the file type that you want to look for
 
 
-**WARNING**
+**WARNING**  
 The email I have put for the 'fromaddr' variable is randomly generated and is free to access as I have also included the password to it in the script, however I highly recommend you swap it out for your own. This is because I dont want my inbox flooded, and also because I will be able to see the location from which you have logged in from, and any file you send through the email.
