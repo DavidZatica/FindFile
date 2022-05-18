@@ -1,6 +1,7 @@
 # FindFile
 Looks through whole device in order to find a specific file. Once done it proceeds to email it to you
 
+<br>
 
 **How to get/recieve emails using FindFile.py:**
 - In FindFile.py, look for the three variables, fromaddr, frompassword, and toaddr
